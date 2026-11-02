@@ -1,0 +1,12 @@
+# Shutdown while fetches and throttle/coalesced waiters are active
+BACKING S1 150 30
+BACKING S2 150 30
+BACKING S3 150 30
+BACKING S4 150 30
+
+GET S1
+GET S1
+GET S2
+GET S3
+SHUTDOWN
+GET S4

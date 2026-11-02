@@ -1,0 +1,10 @@
+# Basic demand-fetching trace (1 client)
+BACKING alpha 120 5
+BACKING beta 200 5
+
+GET alpha
+GET alpha
+GET beta
+PUT alpha 160
+GET alpha
+GET beta

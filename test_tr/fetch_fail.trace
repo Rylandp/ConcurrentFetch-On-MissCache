@@ -1,0 +1,12 @@
+# Backing fetch failure and oversized fetch wakeup test
+BACKING broken_key 200 25 FAIL
+BACKING huge_key 2000 25
+BACKING valid_key 180 10
+
+GET broken_key
+GET broken_key
+GET broken_key
+GET huge_key
+GET huge_key
+GET valid_key
+GET valid_key

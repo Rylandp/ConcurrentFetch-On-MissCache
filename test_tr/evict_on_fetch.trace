@@ -1,0 +1,15 @@
+# Eviction on demand-fetch (FIFO vs Clock divergence)
+BACKING A 200 2
+BACKING B 200 2
+BACKING C 200 2
+BACKING D 200 2
+BACKING E 200 2
+BACKING F 200 2
+
+GET A
+GET B
+GET C
+GET D
+GET E
+GET B
+GET F

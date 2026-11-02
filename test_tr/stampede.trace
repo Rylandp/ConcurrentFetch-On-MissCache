@@ -1,0 +1,10 @@
+# Cache stampede trace: multiple clients request key A simultaneously
+BACKING A 200 30
+BACKING B 100 5
+
+GET A
+GET A
+GET A
+GET A
+GET B
+GET A

@@ -1,0 +1,12 @@
+# Parallel hits while a slow backing fetch is in flight
+BACKING fast_obj 100 1
+BACKING slow_obj 200 80
+
+PUT fast_obj 100
+GET slow_obj
+GET fast_obj
+GET fast_obj
+GET fast_obj
+GET fast_obj
+GET fast_obj
+GET fast_obj
